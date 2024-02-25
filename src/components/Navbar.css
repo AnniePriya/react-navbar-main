@@ -1,0 +1,137 @@
+.active{
+    background-color: #6bd362;
+}
+.top-header {
+    background-color: #5e554e;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-region {
+    display: flex;
+    align-items: center;
+  }
+ 
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c673f;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+nav .title .logo {
+    width: 80px;
+    height: auto;
+    margin-right: 5px; /* Adjust as needed */
+}
+  
+nav .title {
+    font-size: 1.2rem;
+    margin: 1rem 2rem 1rem 1rem; /* Adjust the margin values as needed */
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-family: 'Cascadia Mono', sans-serif;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+    display: flex; /* Use flex display for alignment */
+    align-items: center; /* Center vertically */
+}
+
+nav .title .text-container {   /* to change or algin to the two text below*/
+    display: flex;
+    flex-direction: column;
+}
+nav .title .line1 {
+    font-size: 1.5rem; /* Adjust font size for the first line */
+}
+
+nav .title .line2 {
+    font-size: 1rem; /* Adjust font size for the second line */
+}
+
+nav .title:hover {
+    color: #4bda57; 
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color:#6de05b ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem; /* Change right to left */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
