@@ -2,16 +2,26 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 
-
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
   return (
     <div>
       {/* Top Header */}
       <header className="top-header">
         <div className="header-content">
-          <p>Top Header Content</p>
+          <div className="contact-info">
+            <span role="img" aria-label="phone icon" className="phone-icon">📞</span>
+            <p>Contact: +91 9360959577</p>
+          </div>
+          <div className="social-icons">
+            <Link to="/twitter" className="social-icon" aria-label="Twitter">
+              <img src="/src/icons8-x-20.png" alt="Twitter icon" />
+            </Link>
+            <Link to="/instagram" className="social-icon" aria-label="Instagram">
+              <img src="/src/icons8-instagram-20.png" alt="Instagram icon" />
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -47,6 +57,27 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <footer className="footer">
+        <div className="top-footer">
+          <p>
+            <Link to="/about">About Us</Link> |{" "}
+            <Link to="/contact">Contact Us</Link> |{" "}
+            <Link to="/sitemap">Sitemap</Link> |{" "}
+            <Link to="/tellafriend">Tell a Friend</Link> |{" "}
+            <Link to="/sitemap">Sitemap</Link>
+          </p>
+        </div>
+        <div className="middle-footer">
+          <p>
+            Dance Website Info: A cross-Generation Platform 
+          </p>
+        </div>
+        <div className="lower-footer">
+          <p className="italic-cursive">
+            Thank you for visiting our website.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

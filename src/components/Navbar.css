@@ -1,29 +1,67 @@
 .active{
     background-color: #6bd362;
 }
+
 .top-header {
-    background-color: #5e554e;
-    color: #fff;
-    padding: 1rem;
-  }
+    background-color: #7e6b52;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   
-  .header-content {
+.header-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    width: 100%; /* Ensure the header content takes full width */
+}
   
   .left-region {
     display: flex;
     align-items: center;
   }
- 
-  
+ /* Add these styles to your Navbar.css file or equivalent */
+
+ .top-header {
+    background-color: #7e6b52;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    align-items: flex-end; /* Align to the bottom (right in this case) */
+}
+
+.social-icon {
+    margin-right: 20px; /* Adjust spacing between icons */
+    width: 14px; /* Set the width of the icons */
+    height: 14px; /* Set the height of the icons */
+}
+
+.phone-icon {
+    font-size: 1.2em;
+    color: white;
+    margin-right: 5px;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-items: center;
+    grid-area: nav;
+    grid-template-columns:repeat(4,auto) ;
+
     background-color: #7c673f;
     color: white;
     position: sticky;
@@ -103,7 +141,61 @@ nav .menu span {
     background-color: #fff;
     border-radius: 0.2rem;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
+.footer {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .top-footer, .middle-footer, .lower-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0; /* Adjust spacing as needed */
+  }
+  
+  .top-footer p, .middle-footer p, .lower-footer p {
+    margin: 0;
+  }
+  
+  .top-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .top-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .middle-footer strong {
+    color: #5f593a; /* Set your desired color for strong text */
+  }
+  
+  .italic-cursive {
+    font-style: italic;
+    font-family: cursive;
+  }
 
 @media (max-width: 480px) {
     nav .menu {
