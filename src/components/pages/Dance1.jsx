@@ -1,5 +1,12 @@
 import React from "react";
 
-export const dance1 = () => {
-  return <h1>dance1</h1>;
+const Dance1 = () => {
+  return (
+    <div>
+      <h1>Dance1</h1>
+     <p> hi </p>
+    </div>
+  );
 };
+
+export default Dance1;;

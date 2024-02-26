@@ -41,19 +41,20 @@ export const Navbar = () => {
         </div>
         <ul className={menuOpen ? "open" : ""}>
           <li>
-            <NavLink to="/dance1">Dance1</NavLink>
+          <NavLink to="/Dance1">Dance1</NavLink>
+
           </li>
           <li>
-            <NavLink to="/dance2">Dance2</NavLink>
+            <NavLink to="/Dance2">Dance2</NavLink>
           </li>
           <li>
-            <NavLink to="/dance3">Dance3</NavLink>
+            <NavLink to="/Dance3">Dance3</NavLink>
           </li>
           <li>
-            <NavLink to="/dance4">Dance4</NavLink>
+            <NavLink to="/Dance4">Dance4</NavLink>
           </li>
           <li>
-            <NavLink to="/communityForums">CommunityForums</NavLink>
+            <NavLink to="/CommunityForums">CommunityForums</NavLink>
           </li>
         </ul>
       </nav>
@@ -61,10 +62,10 @@ export const Navbar = () => {
         <div className="top-footer">
          
           <p>
-  <Link to="/aboutus">About Us</Link> |{" "}
-  <Link to="/contactus">Contact Us</Link> |{" "}
-  <Link to="/sitemap">Sitemap</Link> |{" "}
-  <Link to="/tellafriend">Tell a Friend</Link> |{" "}
+  <Link to="/Aboutus">About Us</Link> |{" "}
+  <Link to="/Contactus">Contact Us</Link> |{" "}
+  <Link to="/Sitemap">Sitemap</Link> |{" "}
+  <Link to="/Tellafriend">Tell a Friend</Link> |{" "}
 </p>
 
           
