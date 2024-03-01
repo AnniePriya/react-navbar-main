@@ -1,5 +1,5 @@
 import React from "react";
 
-export const communityForums= () => {
-  return <h1>communityForums</h1>;
+export const CommunityForums= () => {
+  return <h1>CommunityForums</h1>;
 };

@@ -1,5 +1,5 @@
 import React from "react";
 
-export const dance3= () => {
-  return <h1>dance3</h1>;
+export const Dance3= () => {
+  return <h1>Dance3</h1>;
 };
