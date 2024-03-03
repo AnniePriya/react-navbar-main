@@ -1,13 +1,14 @@
+// Navbar.jsx
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CarouselSection from './CarouselSection';
-
 import "./Navbar.css";
+import Footer from "./Footer";
 
-// Your existing code...
+import NewsHighlights from "./Newshighlights";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +16,7 @@ export const Navbar = () => {
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
   const slickSettings = {
     dots: true,
     infinite: true,
@@ -23,6 +25,11 @@ export const Navbar = () => {
     slidesToScroll: 1,
   };
 
+  const newsData = [
+    { title: "Breaking News 1", content: "Lorem ipsum dolor sit amet..." },
+    { title: "Breaking News 2", content: "Consectetur adipiscing elit..." },
+    // Add more news items as needed
+  ];
 
   return (
     <div>
@@ -76,8 +83,15 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
-       {/* Carousel Section */}
-       <CarouselSection />
+
+      {/* Carousel Section */}
+      <CarouselSection />
+
+      {/* News Highlights Section */}
+      <NewsHighlights newsData={newsData} />
+
+      {/* News Highlights Section */}
+      <Footer />
     </div>
   );
 };

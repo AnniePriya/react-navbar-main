@@ -73,7 +73,7 @@ nav {
     grid-area: nav;
     grid-template-columns: repeat(4, auto);
 
-    background-color: #363533;
+    background-color: #252422;
     color: white;
     position: sticky;
     top: 0;
@@ -114,7 +114,7 @@ nav .title .line2 {
 nav .title:hover {
     color: #4bda57;
 }
-
+  
 nav ul {
     display: flex;
 }
@@ -160,61 +160,11 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
-/* Your existing styles... */
-
-.page-container {
+page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-  
-  /* Your existing styles... */
-  
-
-  .footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    margin-top: bottom; /* Push the footer to the bottom */
-  }
-
-.top-footer,
-.middle-footer,
-.lower-footer {
-
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 0; /* Adjust spacing as needed */
-}
-
-.top-footer p,
-.middle-footer p,
-.lower-footer p {
-    margin: 0;
-}
-
-.top-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.top-footer a:hover {
-    text-decoration: underline;
-}
-
-.middle-footer strong {
-    color: #5f593a; /* Set your desired color for strong text */
-}
-
-.italic-cursive {
-    font-style: italic;
-    font-family: cursive;
-}
-
-
 @media (max-width: 767px) {
    
     /* Additional media query styles for smaller screens */
