@@ -7,6 +7,7 @@ import EventIcon from '@mui/icons-material/Event';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import './Navbarpages.css'; 
+import Footer from './Footer'; // Adjust the path based on your project structure
 
 export const Dance1 = () => {
   const [value, setValue] = useState(0);
@@ -27,7 +28,6 @@ export const Dance1 = () => {
         <div className="header-content">
           <div className="menu" onClick={handleMenuClick}>
             <span role="img" aria-label="phone icon" className="phone-icon">📞 Contact: +91 9360959577 </span>
-          
           </div>
           <div className="social-icons">
             <Link to="/twitter" className="social-icon" aria-label="Twitter">
@@ -118,6 +118,8 @@ export const Dance1 = () => {
           </table>
         </div>
       </div>
+      {/* Add the Footer component */}
+      <Footer />
     </div>
   );
 };

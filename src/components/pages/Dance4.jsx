@@ -7,6 +7,7 @@ import EventIcon from '@mui/icons-material/Event';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import './Navbarpages.css'; 
+import Footer from './Footer';
 
 export const Dance4 = () => {
   const [value, setValue] = useState(0);
@@ -118,6 +119,8 @@ export const Dance4 = () => {
           </table>
         </div>
       </div>
+      {/* Add the Footer component */}
+      <Footer />
     </div>
   );
 };

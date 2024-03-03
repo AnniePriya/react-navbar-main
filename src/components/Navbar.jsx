@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CarouselSection from './CarouselSection';
 import "./Navbar.css";
-import Footer from "./Footer";
+import Footer from "./pages/Footer";
 
 import NewsHighlights from "./Newshighlights";
 
