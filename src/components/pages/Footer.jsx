@@ -1,12 +1,14 @@
-// Footer.js
-
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-import "./Footer.css";
+import { Link } from 'react-router-dom';
+import { useSpring, animated } from 'react-spring'; // Import useSpring and animated
+import './Footer.css';
 
 const Footer = () => {
+  // Add a simple fade-in animation
+  const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 1000 } });
+
   return (
-    <footer className="footer">
+    <animated.footer style={fadeIn} className="footer">
       <div className="top-footer">
         <p>
           <Link to="/AboutUs">About Us</Link> |{' '}
@@ -20,7 +22,7 @@ const Footer = () => {
       <div className="lower-footer">
         <p className="italic-cursive">Thank you for visiting our website.</p>
       </div>
-    </footer>
+    </animated.footer>
   );
 };
 

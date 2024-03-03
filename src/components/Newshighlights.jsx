@@ -26,6 +26,9 @@ const NewsHighlights = ({ newsData }) => {
         <div className="highlighted-news">
           <h2>{newsData[currentIndex].title}</h2>
           <p>{newsData[currentIndex].content}</p>
+          {newsData[currentIndex].subDescription && (
+            <p className="sub-description">{newsData[currentIndex].subDescription}</p>
+          )}
         </div>
         <div className="arrow right-arrow" onClick={handleNext}>
           {">"}
