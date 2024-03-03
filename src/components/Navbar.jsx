@@ -1,18 +1,37 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import CarouselSection from './CarouselSection';
+
+import "./Navbar.css";
+
+// Your existing code...
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+  const slickSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
 
   return (
     <div>
       {/* Top Header */}
       <header className="top-header">
         <div className="header-content">
-          <div className="contact-info">
-            <span role="img" aria-label="phone icon" className="phone-icon">📞</span>
-            <p>Contact: +91 9360959577</p>
+          <div className="menu" onClick={handleMenuClick}>
+            <span role="img" aria-label="phone icon" className="phone-icon"></span>
+            <p>📞Contact: +91 9360959577</p>
           </div>
           <div className="social-icons">
             <Link to="/twitter" className="social-icon" aria-label="Twitter">
@@ -34,7 +53,7 @@ export const Navbar = () => {
             <span className="line2">நாடகம் உங்கள் கலையில், உங்கள் கையில்!</span>
           </div>
         </Link>
-        <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="menu" onClick={handleMenuClick}>
           <span></span>
           <span></span>
           <span></span>
@@ -57,6 +76,8 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+       {/* Carousel Section */}
+       <CarouselSection />
     </div>
   );
 };

@@ -1,0 +1,249 @@
+.active {
+    background-color: #6bd362;
+}
+
+.top-header {
+    position: relative;
+    background-color: #bbb6b6;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: flex;  /* Adjust the max-width as needed */
+    margin: 0 auto;    /* Center the top header */
+}
+.middle-header {
+    position: relative;
+    z-index: 2; /* Ensure the middle header is above the carousel */
+  }
+
+.text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-left: 55px;  /* Adjust this value as needed for additional spacing */
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the header content takes full width */
+}
+
+.left-region {
+    display: flex;
+    align-items: center;
+}
+
+/* Add these styles to your Navbar.css file or equivalent */
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    align-items: flex-end; /* Align to the bottom (right in this case) */
+}
+
+.social-icon {
+    margin-right: 20px; /* Adjust spacing between icons */
+    width: 14px; /* Set the width of the icons */
+    height: 14px; /* Set the height of the icons */
+}
+
+.phone-icon {
+    font-size: 1.2em;
+    color: white;
+    margin-right: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    grid-area: nav;
+    grid-template-columns: repeat(4, auto);
+
+    background-color: #363533;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .title .logo {
+    width: 80px;
+    height: auto;
+    margin-right: 5px; /* Adjust as needed */
+}
+
+nav .title {
+    font-size: 1.2rem;
+    margin: 1rem 2rem 1rem 1rem; /* Adjust the margin values as needed */
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-family: 'Cascadia Mono', sans-serif;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+    display: flex; /* Use flex display for alignment */
+    align-items: center; /* Center vertically */
+}
+
+nav .title .text-container {   /* to change or align to the two text below*/
+    display: flex;
+    flex-direction: column;
+}
+
+nav .title .line1 {
+    font-size: 1.5rem; /* Adjust font size for the first line */
+}
+
+nav .title .line2 {
+    font-size: 1rem; /* Adjust font size for the second line */
+}
+
+nav .title:hover {
+    color: #4bda57;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: #6de05b;
+}
+
+nav .menu {
+    display: flex;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem; /* Change right to left */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Your existing styles... */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+  
+  /* Your existing styles... */
+  
+
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: bottom; /* Push the footer to the bottom */
+  }
+
+.top-footer,
+.middle-footer,
+.lower-footer {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0; /* Adjust spacing as needed */
+}
+
+.top-footer p,
+.middle-footer p,
+.lower-footer p {
+    margin: 0;
+}
+
+.top-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.top-footer a:hover {
+    text-decoration: underline;
+}
+
+.middle-footer strong {
+    color: #5f593a; /* Set your desired color for strong text */
+}
+
+.italic-cursive {
+    font-style: italic;
+    font-family: cursive;
+}
+
+
+@media (max-width: 767px) {
+   
+    /* Additional media query styles for smaller screens */
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
