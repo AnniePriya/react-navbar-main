@@ -26,8 +26,8 @@ export const Navbar = () => {
   };
 
   const newsData = [
-    { title: "Breaking News 1", content: "Lorem ipsum dolor sit amet..." },
-    { title: "Breaking News 2", content: "Consectetur adipiscing elit..." },
+    { title: "HighLight 1", content: "Scheme for Scholarships to Young Artistes in Different Cultural Fields",subDescription: "DETAIL : Find information on Scheme for Scholarships to Young Artistes in Different Cultural Fields by Ministry of Culture. Information about the scheme, its scope, number of scholarships, fields, eligibility and duration of scholarship is given. Users can get details about documents required and indicative list of folk, traditional and indigenous art." },
+    { title: "Highlight 2", content: "Scheme for the Award of Fellowships to Outstanding Persons in the Field of Culture",subDescription: "DETAIL : Information on Scheme for the Award of Fellowships to Outstanding Persons in the Field of Culture by Ministry of Culture is available. Users can get details related to scheme, its objective, fields, number of fellowships, publishing grant, eligibility, conditions, procedure of selection and disbursing authority." },
     // Add more news items as needed
   ];
 

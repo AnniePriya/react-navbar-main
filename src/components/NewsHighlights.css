@@ -1,13 +1,13 @@
 /* NewsHighlights.css */
 
 .news-highlights-container {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start;
-    align-items: flex-start; /* Align both title and box to the left */
-    position: relative;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex start;
+  position: relative;
+  padding: 20px;
+}
   
   .news-highlights-box {
     display: flex;
@@ -30,10 +30,22 @@
     cursor: pointer;
   }
   
-  .highlighted-news {
-    flex-grow: 1;
-    padding: 0 20px;
-  }
-  
-  /* Add any additional styles based on your design preferences */
+ /* NewsHighlights.css */
+
+.highlighted-news {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.highlighted-news h2 {
+  font-weight: bold; /* Make the title bold */
+  color: #413333; /* Set the font color to your preferred highlight color */
+}
+
+.highlighted-news p {
+  font-weight: bold; /* Make the content text bold */
+  color: black; /* Set the font color to black */
+}
+
+
   
