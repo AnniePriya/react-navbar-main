@@ -30,13 +30,78 @@
   .top-footer a:hover {
     text-decoration: underline;
   }
-  
-  .middle-footer strong {
-    color: #242322; /* Set your desired color for strong text */
-  }
-  
   .italic-cursive {
     font-style: italic;
     font-family: cursive;
   }
+
+  .colored-line {
+    display: flex;
+    justify-content: space-between;
+    height: 5px; /* Adjust the height as needed */
+  }
   
+  .red-line,
+  .yellow-line,
+  .green-line {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .red-line {
+    background-color: red;
+  }
+  
+  .yellow-line {
+    background-color: yellow;
+  }
+  
+  .green-line {
+    background-color: green;
+  }
+  
+  .glowing-title {
+    text-align: center;
+  }
+  
+  .glowing-title p {
+    font-style: italic;
+    font-weight:300;
+    font-size: 24px; /* Adjust the font size as needed */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .partially-done-line {
+    height: 2px; /* Adjust the height as needed */
+    width: 80%; /* Adjust the width as needed */
+    background-color: #cecece; /* Adjust the color as needed */
+    margin: 0 auto;
+    margin-top: 10px; /* Adjust the margin-top as needed */
+    opacity: 0.7; /* Adjust the opacity as needed */
+  }
+  .lower-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .separator {
+    margin: 0 10px; /* Adjust the margin as needed */
+    color: rgb(185, 185, 185); /* Adjust the color as needed */
+  }
+
+  .footer-details {
+    flex-grow: 1;
+    color: white; /* Adjust the color as needed */
+  }
+
+  .footer-details p {
+    margin: 0 10px 0 0; /* Adjust the margin as needed */
+  }
+  .footer-details {
+    display: inline-block;
+  }

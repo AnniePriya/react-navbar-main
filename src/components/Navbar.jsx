@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CarouselSection from './CarouselSection';
+import { useSpring, animated } from 'react-spring';
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import "./Navbar.css";
 import Footer from "./pages/Footer";
 
@@ -12,7 +14,10 @@ import NewsHighlights from "./Newshighlights";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const props = useSpring({
+    opacity: menuOpen ? 1 : 0,
+    height: menuOpen ? "100%" : "0%",
+  });
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -89,7 +94,10 @@ export const Navbar = () => {
 
       {/* News Highlights Section */}
       <NewsHighlights newsData={newsData} />
-
+      {/* Animate a div with useSpring */}
+      <animated.div style={props}>
+        <p>This content will be animated based on menuOpen state.</p>
+      </animated.div>
       {/* News Highlights Section */}
       <Footer />
     </div>
