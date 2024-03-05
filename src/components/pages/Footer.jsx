@@ -5,11 +5,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome s
 import './Footer.css';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
+
 const Footer = () => {
   const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 1000 } });
 
   return (
     <div>
+      
       {/* Colored line at the top */}
       <div className="colored-line">
         <div className="red-line"></div>
