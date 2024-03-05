@@ -59,7 +59,7 @@ const Footer = () => {
       </p>
     </MDBCol>
         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-        <h6 className='text-uppercase fw-bold mb-4'> Why kalaiAttam ?  </h6>
+        <h6 className='text-uppercase fw-bold mb-4'> Why kalai Attam ?  </h6>
              
               <p>
               "Explore Tamil Nadu's unique dance heritage from engaging articles to interactive quizzes, our platform provides cross-generational connections, preserving the rich culture."
