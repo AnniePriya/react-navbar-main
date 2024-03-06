@@ -7,6 +7,7 @@ import EventIcon from '@mui/icons-material/Event';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import './Navbarpages.css'; 
+import { CheckCircle, Aperture, GitHub } from 'react-feather';
 import ArticleCard from './ArticleCard';
 import EventList from './EventList';
 import VideoCarousel from './VideoCarousel';
@@ -26,22 +27,34 @@ export const Dance2 = () => {
 
   return (
     <div>
-      {/* Top Header */}
       <header className="top-header">
-        <div className="header-content">
-          <div className="menu" onClick={handleMenuClick}>
-            <span role="img" aria-label="phone icon" className="phone-icon">📞 Contact: +91 9360959577</span>
-           
-          </div>
-          <div className="social-icons">
-            <Link to="/twitter" className="social-icon" aria-label="Twitter">
-              <img src="/src/icons8-x-20.png" alt="Twitter icon" />
-            </Link>
-            <Link to="/instagram" className="social-icon" aria-label="Instagram">
-              <img src="/src/icons8-instagram-20.png" alt="Instagram icon" />
-            </Link>
-          </div>
+        <div className="social-icons">
+          <Link to="/facebook" style={{ color: 'black', textDecoration: 'none' }}>
+            <i className="fab fa-facebook"></i>
+          </Link>
+          <Link to="/twitter" style={{ color: 'black', textDecoration: 'none' }}>
+            <i className="fab fa-twitter"></i>
+          </Link>
+          <Link to="/instagram" style={{ color: 'black', textDecoration: 'none' }}>
+            <i className="fab fa-instagram"></i>
+          </Link>
+          {/* Add more social media icons as needed */}
         </div>
+
+        <div className="icon-container">
+  <Link to="/CommunityForums" className="icon-wrapper" title="Check Circle" style={{ color: 'black', textDecoration: 'none' }}>
+    <CheckCircle size={20} />
+    <span className="icon-text">Check Circle</span>
+  </Link>
+  <Link to="/Navbar" className="icon-wrapper" title="Aperture" style={{ color: 'black', textDecoration: 'none' }}>
+    <Aperture size={20} />
+    <span className="icon-text">Aperture</span>
+  </Link>
+  <a href="https://github.com/AnniePriya/react-navbar-main" className="icon-wrapper" title="GitHub" style={{ color: 'black', textDecoration: 'none' }}>
+    <GitHub size={20} />
+    <span className="icon-text">GitHub</span>
+  </a>
+</div>
       </header>
 
       {/* Middle Header (Navigation) */}
