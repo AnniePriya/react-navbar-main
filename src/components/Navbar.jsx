@@ -11,6 +11,7 @@ import "./Navbar.css";
 import Footer from "./pages/Footer";
 import { CheckCircle, Aperture, GitHub } from 'react-feather';
 import CardDisplay from "./CardDisplay";
+import SecondCard from "./SecondCard";
 
 
 export const Navbar = () => {
@@ -104,7 +105,7 @@ export const Navbar = () => {
       <animated.div style={props}>
         <p>This content will be animated based on menuOpen state.</p>
       </animated.div>
-     
+     <SecondCard/>
       <Footer />
     </div>
   );
