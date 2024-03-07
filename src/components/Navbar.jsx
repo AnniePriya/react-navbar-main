@@ -8,10 +8,9 @@ import CarouselSection from './CarouselSection';
 import { useSpring, animated } from 'react-spring';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import "./Navbar.css";
+import CardContainer from './CardContainer';
 import Footer from "./pages/Footer";
 import { CheckCircle, Aperture, GitHub } from 'react-feather';
-import CardDisplay from "./CardDisplay";
-import SecondCard from "./SecondCard";
 
 
 export const Navbar = () => {
@@ -100,12 +99,15 @@ export const Navbar = () => {
 
       {/* Carousel Section */}
       <CarouselSection />
-   <CardDisplay />
+      <div className="app-container">
+      {/* Other components or content */}
+      <CardContainer />
+    </div>
       {/* Animate a div with useSpring */}
       <animated.div style={props}>
         <p>This content will be animated based on menuOpen state.</p>
       </animated.div>
-     <SecondCard/>
+  
       <Footer />
     </div>
   );

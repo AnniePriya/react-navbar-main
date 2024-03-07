@@ -1,15 +1,18 @@
 /* SecondCard.css */
+
 .second-card-container {
     display: flex;
     justify-content: space-between; /* Adjust as needed */
     align-items: flex-start;
     padding: 10px; /* Adjust the padding as needed */
-  }
-  
-  .second-card {
-    width: 45%;
-    margin-right: 10px; /* Adjust the margin as needed for spacing between cards */
-  }
+}
+
+.second-card {
+    flex: 5; /* Adjust the flex value as needed */
+    width: 100%; /* Adjust the width as needed */
+    margin-left: 45px; /* Adjust the margin as needed for spacing between cards */
+}
+
 .second-card-header {
     position: relative;
 }

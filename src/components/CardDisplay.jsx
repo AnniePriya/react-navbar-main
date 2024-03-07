@@ -18,16 +18,18 @@ const CardDisplay = () => {
 
   const featuredCards = [
     {
-      header: 'Featured 1',
-      title: 'Special title treatment 1',
-      text: 'With supporting text below as a natural lead-in to additional content.',
+      header: 'News Highlight 1',
+      title: 'Apply for the post of Folk Art Instructors and Supervisors for Part Time Folk Art Training Center',
+      text: 'Press Release 18.12.2023',
       footer: '2 days ago',
+      link: 'https://artandculture.tn.gov.in/apply-post-folk-art-instructors-and-supervisors-part-time-folk-art%C2%A0training%C2%A0center-0', // Add the link for the first card
     },
     {
-      header: 'Featured 2',
-      title: 'Special title treatment 2',
-      text: 'With supporting text below as a natural lead-in to additional content.',
+      header: 'News Highlight 2',
+      title: 'Application Invited for District Art Awards for the year 2022-2023 & 2023-2024',
+      text: 'pr300523_1052',
       footer: '2 days ago',
+      link: 'https://artandculture.tn.gov.in/application-invited-district-art-awards-year-2022-2023-2023-2024', // Add the link for the second card
     },
     // Add more cards as needed
   ];
@@ -38,6 +40,11 @@ const CardDisplay = () => {
 
   const goToPrevCard = () => {
     setCurrentCardIndex((prevIndex) => (prevIndex - 1 + featuredCards.length) % featuredCards.length);
+  };
+
+  const handleGoSomewhere = () => {
+    const currentCard = featuredCards[currentCardIndex];
+    window.location.href = currentCard.link; // Redirect to the specified link
   };
 
   return (
@@ -57,13 +64,12 @@ const CardDisplay = () => {
         <MDBCardBody>
           <MDBCardTitle>{featuredCards[currentCardIndex].title}</MDBCardTitle>
           <MDBCardText>{featuredCards[currentCardIndex].text}</MDBCardText>
-          <MDBBtn href='#' className="card-footer-btn">
-            Go somewhere
+          <MDBBtn onClick={handleGoSomewhere} className="card-footer-btn">
+            Visit
           </MDBBtn>
         </MDBCardBody>
         <MDBCardFooter>{featuredCards[currentCardIndex].footer}</MDBCardFooter>
       </MDBCard>
-     
     </div>
   );
 };
