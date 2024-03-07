@@ -10,7 +10,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./Navbar.css";
 import Footer from "./pages/Footer";
 import { CheckCircle, Aperture, GitHub } from 'react-feather';
-import NewsHighlights from "./Newshighlights";
+import CardDisplay from "./CardDisplay";
+
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,11 +31,7 @@ export const Navbar = () => {
     slidesToScroll: 1,
   };
 
-  const newsData = [
-    { title: "HighLight 1", content: "Scheme for Scholarships to Young Artistes in Different Cultural Fields",subDescription: "DETAIL : Find information on Scheme for Scholarships to Young Artistes in Different Cultural Fields by Ministry of Culture. Information about the scheme, its scope, number of scholarships, fields, eligibility and duration of scholarship is given. Users can get details about documents required and indicative list of folk, traditional and indigenous art." },
-    { title: "Highlight 2", content: "Scheme for the Award of Fellowships to Outstanding Persons in the Field of Culture",subDescription: "DETAIL : Information on Scheme for the Award of Fellowships to Outstanding Persons in the Field of Culture by Ministry of Culture is available. Users can get details related to scheme, its objective, fields, number of fellowships, publishing grant, eligibility, conditions, procedure of selection and disbursing authority." },
-    // Add more news items as needed
-  ];
+ 
   return (
     <div>
       <header className="top-header">
@@ -102,14 +99,12 @@ export const Navbar = () => {
 
       {/* Carousel Section */}
       <CarouselSection />
-
-      {/* News Highlights Section */}
-      <NewsHighlights newsData={newsData} />
+   <CardDisplay />
       {/* Animate a div with useSpring */}
       <animated.div style={props}>
         <p>This content will be animated based on menuOpen state.</p>
       </animated.div>
-      {/* News Highlights Section */}
+     
       <Footer />
     </div>
   );
