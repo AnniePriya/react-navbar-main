@@ -53,7 +53,7 @@ const Footer = () => {
     <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
       <h6 className='text-uppercase fw-bold mb-4'>
         <MDBIcon icon="gem" className="me-3" />
-        Kalai Attam
+        Kalai AAttam
       </h6>
       <p>
         {/* Replace the placeholder content with your logo */}
@@ -61,7 +61,7 @@ const Footer = () => {
       </p>
     </MDBCol>
         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-        <h6 className='text-uppercase fw-bold mb-4'> Why kalai Attam ?  </h6>
+        <h6 className='text-uppercase fw-bold mb-4'> Why kalaiAAttam </h6>
              
               <p>
               "Explore Tamil Nadu's unique dance heritage from engaging articles to interactive quizzes, our platform provides cross-generational connections, preserving the rich culture."

@@ -62,7 +62,7 @@ export const Dance3 = () => {
           <img src="/src/logo2.webp" alt="KalaiAttam Logo" className="logo" />
           <div className="text-container">
             <span className="line1">KalaiAttam</span>
-            <span className="line2">நடனம் உங்கள் கலையில், உங்கள் கையில்!</span>
+            <span className="line2"style={{fontSize:"12px"}}>நடனம் உங்கள் கலையில், உங்கள் கையில்!</span>
           </div>
         </Link>
         <div className="menu" onClick={handleMenuClick}>

@@ -60,10 +60,10 @@ export const Dance1 = () => {
       {/* Middle Header (Navigation) */}
       <nav className="middle-header">
         <Link to="/" className="title">
-          <img src="/src/logo2.webp" alt="KalaiAttam Logo" className="logo" />
+          <img src="/src/logo2.webp" alt="KalaiAAttam Logo" className="logo" />
           <div className="text-container">
-            <span className="line1">KalaiAttam</span>
-            <span className="line2">நடனம் உங்கள் கலையில், உங்கள் கையில்!</span>
+            <span className="line1">KalaiAAttam</span>
+            <span className="line2" style={{fontSize:"12px"}}>நடனம் உங்கள் கலையில், உங்கள் கையில்!</span>
           </div>
         </Link>
         <div className="menu" onClick={handleMenuClick}>
